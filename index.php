@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Y Registro - Car Center</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <main>
+
+      <div class= "contenedor__todo"> 
+        <div class="caja__trasera" >
+            <div class="caja__trasera-login">
+                <h3>Ya tienes una cuenta?</h3>
+                <p>Inicia sesion para entrar a la pagina</p>
+                <button id="btn__iniciar__sesion">Iniciar Sesión</button>
+
+             </div>
+             <div class="caja__trasera-register" >
+                <div class="caja__trasera-login">
+                    <h3>Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar Sesion</p>
+                    <button id="btn__registarse">Registrarse</button>
+    
+                 </div>
+    
+            </div>
+        </div>
+            
+        <div class="contenedor__login-register">
+
+            <form action="php/login_usuario_be.php" method="POST" class="formulario__login">
+
+                <h2>Iniciar Sesion</h2>
+                <input type="text" placeholder="Nombre de usuario" name ="usuario">
+                <input type="password" placeholder="Contraseña" name = "contrasena">
+                <button>Entrar</button>
+            </form>
+
+            <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo" name = "nombre_completo"> 
+                <input type="text" placeholder="Correo Electronico" name = "correo"> 
+                <input type="text" placeholder="Nombre de Usuario" name = "usuario">
+                <input type="password" placeholder="Contraseña" name = "contrasena">
+                <button>Registrarse</button>
+            </form>
+
+        </div>
+     </div>
+
+      
+      
+    </main>
+    <script src="/login/JS/script.js"></script>
+</body>
+</html>
